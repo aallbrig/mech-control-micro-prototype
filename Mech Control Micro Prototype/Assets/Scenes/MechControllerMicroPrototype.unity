@@ -1603,6 +1603,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e067b5a01b04599bd5dfaad2c8b38de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireEffect: {fileID: 1416843826977054, guid: 20f6e929a1aba9a4691c344f454ab272, type: 3}
+  firePoint: {fileID: 1720770620}
 --- !u!114 &1491790712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1663,6 +1665,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ef60d0cdfd0095b45a0aa0903f37b882, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7b55fafa2fcc2f448e74658d5eee90c, type: 3}
+--- !u!1 &1720770620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: d7b55fafa2fcc2f448e74658d5eee90c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1720770619}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1727730884
 PrefabInstance:
   m_ObjectHideFlags: 0
