@@ -8,6 +8,7 @@ namespace MonoBehaviours.Controllers
         // WASD Input controller either works on self or a target
         [Tooltip("Optional target to apply WASD movement (default: self)")]
         public GameObject moveTarget;
+
         public GameObject rotateTarget;
 
         private IMoveable _moveController;
@@ -34,6 +35,7 @@ namespace MonoBehaviours.Controllers
 
             var direction = new Vector3(0, 0, Input.GetAxis("Vertical"));
             _moveController.Move(direction);
+
             var rotation = new Vector3(0, Input.GetAxis("Horizontal"), 0);
             _rotateController.Rotate(rotation);
         }
