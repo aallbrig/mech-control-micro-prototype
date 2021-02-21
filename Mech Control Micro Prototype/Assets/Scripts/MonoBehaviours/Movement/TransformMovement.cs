@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MonoBehaviours.Movement
 {
-    public class TransformMovement : MonoBehaviour, IMoveable
+    public class TransformMovement : MonoBehaviour, IMoveable, IVelocity
     {
         public float speed = 1.0f;
         public Transform directionTransform;
@@ -17,6 +17,8 @@ namespace MonoBehaviours.Movement
 
         public void Move(Vector3 direction)
         {
+            Velocity = direction.normalized.magnitude;
+
             if (direction == Vector3.zero) return;
 
             if (directionTransform != null)
@@ -28,5 +30,7 @@ namespace MonoBehaviours.Movement
             else
                 _transform.Translate(direction * (speed * Time.deltaTime));
         }
+
+        public float Velocity { get; private set; }
     }
 }
