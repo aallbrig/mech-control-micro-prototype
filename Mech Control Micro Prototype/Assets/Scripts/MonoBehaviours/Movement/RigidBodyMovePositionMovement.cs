@@ -7,7 +7,6 @@ namespace MonoBehaviours.Movement
     public class RigidBodyMovePositionMovement : MonoBehaviour, IMoveable
     {
         public float speed = 1.0f;
-        public ForceMode forceMode = ForceMode.Force;
         private Rigidbody _rigidbody;
         private Transform _transform;
 
