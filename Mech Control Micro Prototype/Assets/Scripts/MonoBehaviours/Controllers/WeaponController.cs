@@ -18,7 +18,7 @@ namespace MonoBehaviours.Controllers
         private void Update()
         {
             // Left click fires
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
                 ActiveWeapon.Fire();
 
             // Right click aims
